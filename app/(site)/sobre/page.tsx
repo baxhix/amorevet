@@ -1,8 +1,22 @@
 import type { Metadata } from "next";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.com.br";
+
 export const metadata: Metadata = {
   title: "Sobre Nós",
-  description: "Conheça a história e a equipe da Amor&Vet Clínica Veterinária.",
+  description: "Conheça a história da Amor&Vet, fundada em 2013. Mais de 10 anos cuidando com amor dos pets com 8 veterinários especializados.",
+  alternates: { canonical: `${SITE_URL}/sobre` },
+  openGraph: {
+    title: "Sobre a Amor&Vet | Clínica Veterinária",
+    description: "Mais de uma década cuidando com amor dos pets da nossa comunidade. Conheça nossa história e equipe.",
+    url: `${SITE_URL}/sobre`,
+    images: [{ url: `${SITE_URL}/logoamorevet.webp`, width: 800, height: 600 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sobre a Amor&Vet",
+    description: "Mais de uma década cuidando com amor dos pets da nossa comunidade.",
+  },
 };
 
 export default function SobrePage() {

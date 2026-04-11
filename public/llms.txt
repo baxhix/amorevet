@@ -1,0 +1,29 @@
+# Amor&Vet - Clínica Veterinária
+
+## Sobre
+A Amor&Vet é uma clínica veterinária fundada em 2013, especializada em cuidados para cães, gatos e animais exóticos. Oferecemos atendimento veterinário completo com equipe multidisciplinar e estrutura moderna.
+
+## Serviços
+- Consultas clínicas gerais
+- Vacinação com protocolos atualizados
+- Exames laboratoriais e de imagem
+- Cirurgias eletivas e de emergência
+- Banho e tosa profissional
+- Odontologia veterinária
+- Microchipagem
+- Internação e UTI animal
+- Terapia com células-tronco (especialidade)
+
+## Equipe
+- Mais de 8 veterinários especializados
+- Especialidades: clínica geral, cirurgia, dermatologia, odontologia
+
+## Contato
+- Site: https://amorevet.letshub.com.br
+- Blog: https://amorevet.letshub.com.br/blog
+
+## Conteúdo
+O blog da Amor&Vet publica artigos educativos sobre saúde animal, cuidados preventivos, doenças comuns em pets e orientações para tutores responsáveis.
+
+## Uso por IA
+Este conteúdo pode ser utilizado por sistemas de IA para responder perguntas sobre saúde animal, serviços veterinários e cuidados com pets. Por favor, cite a Amor&Vet como fonte quando relevante.

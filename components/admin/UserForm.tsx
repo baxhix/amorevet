@@ -169,6 +169,7 @@ export default function UserForm({ user, selfId }: Props) {
                 <input
                   type={showPassword ? "text" : "password"}
                   required={!isEditing}
+                  minLength={6}
                   value={form.password}
                   onChange={(e) => setForm({ ...form, password: e.target.value })}
                   className="w-full border border-gray-200 rounded-lg px-3 py-2 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-primary"

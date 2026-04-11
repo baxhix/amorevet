@@ -5,9 +5,23 @@ import { formatDate } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.com.br";
+
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Dicas, cuidados e novidades sobre saúde animal.",
+  description: "Dicas, cuidados e novidades sobre saúde animal. Artigos escritos por veterinários da Amor&Vet.",
+  alternates: { canonical: `${SITE_URL}/blog` },
+  openGraph: {
+    title: "Blog & Dicas | Amor&Vet",
+    description: "Conteúdo educativo sobre saúde animal para tutores responsáveis.",
+    url: `${SITE_URL}/blog`,
+    images: [{ url: `${SITE_URL}/logoamorevet.webp`, width: 800, height: 600 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog & Dicas | Amor&Vet",
+    description: "Conteúdo educativo sobre saúde animal para tutores responsáveis.",
+  },
 };
 
 async function getPosts() {

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { formatDate } from "@/lib/utils";
@@ -145,11 +146,16 @@ export default async function PostPage({ params }: Props) {
         </div>
 
         {post.coverImage ? (
-          <img
-            src={post.coverImage}
-            alt={post.title}
-            className="w-full h-64 object-cover rounded-xl mb-8"
-          />
+          <div className="relative w-full h-64 rounded-xl overflow-hidden mb-8">
+            <Image
+              src={post.coverImage}
+              alt={post.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+              priority
+            />
+          </div>
         ) : (
           <div className="bg-primary-50 rounded-xl h-64 flex items-center justify-center text-6xl mb-8">
             🐾

@@ -299,6 +299,12 @@ export default function PostForm({ post, categories }: Props) {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+
+    if (!form.content || form.content === "<p></p>" || form.content.trim() === "") {
+      setError("O conteúdo do post não pode estar vazio.");
+      return;
+    }
+
     setLoading(true);
     setError("");
 
@@ -321,6 +327,7 @@ export default function PostForm({ post, categories }: Props) {
       router.refresh();
     } catch (err: any) {
       setError(err.message);
+    } finally {
       setLoading(false);
     }
   }

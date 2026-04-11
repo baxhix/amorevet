@@ -1,7 +1,27 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { formatDate } from "@/lib/utils";
 import ContactFormHome from "@/components/site/ContactFormHome";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.com.br";
+
+export const metadata: Metadata = {
+  title: "Amor&Vet - Clínica Veterinária",
+  description: "Clínica veterinária com mais de 10 anos de experiência. Consultas 24h, cirurgias, exames, vacinação e terapia com células-tronco para cães, gatos e exóticos.",
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    title: "Amor&Vet - Clínica Veterinária",
+    description: "Cuidado veterinário com amor e profissionalismo. Pronto atendimento 24h.",
+    url: SITE_URL,
+    images: [{ url: `${SITE_URL}/logoamorevet.webp`, width: 800, height: 600, alt: "Amor&Vet Clínica Veterinária" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Amor&Vet - Clínica Veterinária",
+    description: "Cuidado veterinário com amor e profissionalismo. Pronto atendimento 24h.",
+  },
+};
 
 export const dynamic = "force-dynamic";
 
@@ -62,8 +82,48 @@ const GALLERY_ITEMS = [
 export default async function HomePage() {
   const posts = await getLatestPosts();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "VeterinaryCare",
+    name: "Amor&Vet Clínica Veterinária",
+    url: SITE_URL,
+    logo: `${SITE_URL}/logoamorevet.webp`,
+    image: `${SITE_URL}/logoamorevet.webp`,
+    description:
+      "Clínica veterinária com mais de 10 anos de experiência. Atendimento completo para cães, gatos e animais exóticos.",
+    foundingDate: "2013",
+    numberOfEmployees: { "@type": "QuantitativeValue", value: 8 },
+    medicalSpecialty: "Veterinary Medicine",
+    availableService: SERVICES.map((s) => ({
+      "@type": "MedicalProcedure",
+      name: s.title,
+      description: s.description,
+    })),
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "08:00",
+        closes: "13:00",
+      },
+    ],
+    sameAs: [SITE_URL],
+  };
+
   return (
     <>
+      {/* JSON-LD VeterinaryClinic */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* ── HERO ─────────────────────────────────────────── */}
       <section className="bg-gradient-to-br from-primary-dark to-primary text-white py-24 px-4">
         <div className="max-w-4xl mx-auto text-center">

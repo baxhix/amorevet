@@ -1,9 +1,23 @@
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.com.br";
+
 export const metadata: Metadata = {
   title: "Serviços",
-  description: "Conheça todos os serviços veterinários da Amor&Vet.",
+  description: "Consultas, vacinação, cirurgias, exames, banho e tosa, odontologia veterinária e muito mais. Atendimento completo para cães, gatos e exóticos.",
+  alternates: { canonical: `${SITE_URL}/servicos` },
+  openGraph: {
+    title: "Serviços Veterinários | Amor&Vet",
+    description: "Atendimento veterinário completo com estrutura moderna e equipe especializada.",
+    url: `${SITE_URL}/servicos`,
+    images: [{ url: `${SITE_URL}/logoamorevet.webp`, width: 800, height: 600 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Serviços Veterinários | Amor&Vet",
+    description: "Atendimento veterinário completo com estrutura moderna e equipe especializada.",
+  },
 };
 
 async function getServices() {
