@@ -31,7 +31,7 @@ export default function ContactFormHome() {
         <p className="text-dark-600 text-sm">Retornaremos em breve. Obrigado!</p>
         <button
           onClick={() => setStatus("idle")}
-          className="mt-6 text-sm text-primary underline"
+          className="mt-6 text-sm text-secondary underline"
         >
           Enviar outra mensagem
         </button>
@@ -104,7 +104,7 @@ export default function ContactFormHome() {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors disabled:opacity-60"
+          className="w-full bg-secondary text-white py-3 rounded-xl font-semibold hover:bg-secondary-dark transition-colors disabled:opacity-60"
         >
           {status === "loading" ? "Enviando..." : "Enviar Mensagem"}
         </button>

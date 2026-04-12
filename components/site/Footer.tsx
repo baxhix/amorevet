@@ -96,7 +96,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="mt-4">
-              <Link href="/sobre" className="text-sm text-primary-light hover:text-secondary transition-colors">
+              <Link href="/sobre" className="text-sm text-primary hover:text-secondary transition-colors">
                 Conheça nossa equipe →
               </Link>
             </div>
