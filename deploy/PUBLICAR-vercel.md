@@ -1,7 +1,7 @@
 # Publicar na Vercel
 
-O projeto já builda limpo na Vercel (`npm run build` roda `prisma generate` antes do `next build`,
-e a página `/novodesign` é renderizada sob demanda — **não precisa de banco de dados** para funcionar).
+O projeto já builda limpo na Vercel (o cliente Prisma é versionado, então `next build` roda direto)
+e a home (raiz `/`) é renderizada sob demanda — **não precisa de banco de dados** para funcionar).
 
 ## Pré-requisitos
 - Conta na Vercel (vercel.com) conectada ao seu GitHub/GitLab.
@@ -17,12 +17,11 @@ e a página `/novodesign` é renderizada sob demanda — **não precisa de banco
 4. **Environment Variables** (aba Settings → Environment Variables):
    | Variável | Valor | Para quê |
    |---|---|---|
-   | `NOVODESIGN_ROOT` | `1` | faz a raiz `/` mostrar o novo design |
    | `NEXT_PUBLIC_SITE_URL` | `https://<seu-dominio>` | canonical / Open Graph |
    | `DATABASE_URL` | *(opcional)* string de um Postgres gerenciado | só se quiser blog/admin funcionando |
    | `NEXTAUTH_SECRET` | *(opcional)* `openssl rand -base64 32` | só se usar /admin |
    | `NEXTAUTH_URL` | *(opcional)* `https://<seu-dominio>` | só se usar /admin |
-5. **Deploy**. Ao terminar, a URL `*.vercel.app` já mostra o novo design na raiz.
+5. **Deploy**. Ao terminar, a URL `*.vercel.app` já mostra o novo design na **raiz `/`** (ele é a home agora).
 
 ## Opção B — Vercel CLI
 ```bash
@@ -31,7 +30,7 @@ vercel login            # (interativo, na sua conta)
 vercel                  # preview
 vercel --prod           # produção
 ```
-Depois defina as mesmas variáveis com `vercel env add NOVODESIGN_ROOT` etc.
+Depois defina as variáveis com `vercel env add NEXT_PUBLIC_SITE_URL` etc.
 
 ## Domínio personalizado `amorevet.novodesign.letshub.com.br`
 1. No projeto da Vercel: **Settings → Domains → Add** `amorevet.novodesign.letshub.com.br`.
@@ -45,6 +44,5 @@ Depois defina as mesmas variáveis com `vercel env add NOVODESIGN_ROOT` etc.
 - **Banco de dados**: a Vercel é serverless; o Postgres do Docker não existe lá. O novo design
   funciona sem banco. Para blog/admin, use um Postgres gerenciado (Neon, Supabase, Vercel Postgres)
   e preencha `DATABASE_URL` (com pooling).
-- A página está com `robots: noindex` (staging). Para indexar no Google, libere em
-  `app/novodesign/layout.tsx`.
-- Sem `NOVODESIGN_ROOT`, a raiz mostra o site atual e o novo design fica em `/novodesign`.
+- A home já está com `robots: index` (aparece no Google). Ajuste em `app/(home)/layout.tsx` se quiser mudar.
+- O novo design é a home (raiz `/`). As páginas /sobre, /servicos, /blog e /contato seguem como estão.

@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   title: "Amor&Vet — Clínica Veterinária em Londrina | Cuidado com amor 24h",
   description:
     "Há mais de 10 anos cuidando de cães, gatos e exóticos em Londrina. Pronto atendimento 24h, centro cirúrgico, exames, especialidades e terapia com células-tronco.",
-  alternates: { canonical: `${SITE_URL}/novodesign` },
-  robots: { index: false, follow: false },
+  alternates: { canonical: SITE_URL },
+  robots: { index: true, follow: true },
 };
 
-export default function NovoDesignLayout({ children }: { children: React.ReactNode }) {
+export default function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="nd min-h-screen">
       <HeroThemeProvider>
