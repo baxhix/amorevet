@@ -48,4 +48,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/app/generated/prisma
+# Cliente Prisma gerado é commitado (portável, sem binário de engine) para o build funcionar na Vercel
+# /app/generated/prisma
