@@ -89,8 +89,6 @@ export type TeamMember = { name: string; role: string; photo?: string };
    Para adicionar um novo médico: preencha nome/role e coloque a foto em /public/equipe. */
 export const TEAM: TeamMember[] = [
   { name: "Drª Gabriela N. Dantas", role: "Responsável Técnica · CRMV-PR 16.143", photo: "/equipe/gabriela.jpg" },
-  { name: "Drª Mariana Fortunato", role: "Otoscopia Veterinária", photo: "/equipe/mariana.jpg" },
-  { name: "Vitor Hugo dos Santos", role: "Clínica Médica · CRMV-PR 14.918", photo: "/equipe/azul.jpg" },
   { name: "Médico Veterinário", role: "Cirurgia · Centro Cirúrgico", photo: "/equipe/cirurgia.jpg" },
 
   // 5 médicas — fotos em breve (adicione `photo: "/equipe/xxx.jpg"` quando tiver)
