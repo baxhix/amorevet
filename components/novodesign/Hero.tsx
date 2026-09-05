@@ -12,8 +12,8 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 const HERO_STATS = [
   { to: 10, suffix: "+", label: "anos cuidando" },
-  { to: 5, suffix: " mil+", label: "pets atendidos" },
-  { to: 8, suffix: "", label: "veterinários" },
+  { to: 6, suffix: " mil+", label: "pacientes atendidos" },
+  { to: 30, suffix: "+", label: "veterinários" },
   { to: 24, suffix: "h", label: "pronto atendimento" },
 ];
 
@@ -167,7 +167,7 @@ export default function Hero() {
               ))}
             </span>
             <p className="text-[0.88rem] text-white/90">
-              <span className="font-semibold text-white">98% de satisfação</span> · 5 mil+ pets cuidados
+              <span className="font-semibold text-white">98% de satisfação</span> · 6 mil+ pacientes atendidos
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4">

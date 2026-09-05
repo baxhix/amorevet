@@ -11,13 +11,14 @@ export default function StemCell() {
           {/* Texto — mesma cor do fundo (sem box) */}
           <Reveal>
             <h2 className="text-[2rem] font-bold leading-[1.12] tracking-tight text-primary sm:text-[2.5rem]">
-              Laboratório de<br />Células-Tronco
+              Laboratório de<br />Terapia Celular
             </h2>
             <Lede className="mt-5 max-w-lg">
-              Uma das abordagens mais promissoras da medicina veterinária.
-              Utilizamos células do próprio tecido adiposo do animal para reparar
-              tecidos danificados e restaurar a função de órgãos afetados por
-              doenças ou lesões.
+              Medicina regenerativa com células-tronco para reparar tecidos e
+              auxiliar no tratamento de diversas doenças, trazendo qualidade de
+              vida aos nossos pacientes. Contamos com banco de células-tronco de
+              cães, gatos e equinos, além de serviço especializado para a decisão
+              do melhor protocolo terapêutico.
             </Lede>
             <div className="mt-8">
               <ButtonWhatsApp href={CONTACT.whatsapp}>Saiba mais pelo WhatsApp</ButtonWhatsApp>
@@ -26,13 +27,13 @@ export default function StemCell() {
               <div>
                 <div className="flex items-center gap-2 text-primary">
                   <Dna className="h-5 w-5" />
-                  <span className="text-[1.5rem] font-bold text-ink">Autóloga</span>
+                  <span className="text-[1.5rem] font-bold text-ink">Banco próprio</span>
                 </div>
-                <p className="mt-1 text-[0.82rem] text-ink/50">células do próprio pet</p>
+                <p className="mt-1 text-[0.82rem] text-ink/50">cães, gatos e equinos</p>
               </div>
               <div>
-                <span className="text-[1.5rem] font-bold text-ink">Regenerativa</span>
-                <p className="mt-1 text-[0.82rem] text-ink/50">repara e restaura tecidos</p>
+                <span className="text-[1.5rem] font-bold text-ink">Protocolo</span>
+                <p className="mt-1 text-[0.82rem] text-ink/50">decisão especializada</p>
               </div>
             </div>
           </Reveal>

@@ -19,8 +19,8 @@ export const CONTACT = {
 
 export const STATS = [
   { value: "10+", label: "anos cuidando" },
-  { value: "5 mil+", label: "pets atendidos" },
-  { value: "8", label: "veterinários" },
+  { value: "6 mil+", label: "pacientes atendidos" },
+  { value: "30+", label: "veterinários" },
   { value: "24h", label: "pronto atendimento" },
 ];
 
@@ -34,12 +34,12 @@ export type Service = {
 export const SERVICES: Service[] = [
   { icon: "Ambulance", tone: "coral", title: "Pronto Atendimento 24h", description: "Emergências veterinárias acolhidas a qualquer hora — equipe de plantão pronta para agir quando cada minuto importa." },
   { icon: "Building", tone: "teal", title: "Internação Monitorada", description: "Estrutura de internamento com acompanhamento 24h, conforto e segurança durante toda a recuperação do seu pet." },
-  { icon: "Microscope", tone: "teal", title: "Exames Laboratoriais", description: "Análises clínicas no laboratório próprio, com resultados rápidos e precisos para um diagnóstico confiável." },
-  { icon: "Scan", tone: "coral", title: "Diagnóstico por Imagem", description: "Radiografia, ultrassonografia e exames de imagem de alta resolução para enxergar o que os olhos não alcançam." },
+  { icon: "Microscope", tone: "teal", title: "Exames Laboratoriais", description: "Unidade de laboratório parceiro PETSCOP, com resultados rápidos e precisos para um diagnóstico confiável." },
+  { icon: "Scan", tone: "coral", title: "Diagnóstico por Imagem", description: "Unidade PetRad de exames de imagem. Radiografia, ultrassonografia e exames de imagem de alta resolução." },
   { icon: "Stethoscope", tone: "teal", title: "Especialidades Clínicas", description: "Atendimento especializado por médicos veterinários dedicados a diversas áreas da clínica." },
   { icon: "Surgery", tone: "coral", title: "Centro Cirúrgico", description: "Cirurgias eletivas e de urgência em ambiente equipado, com anestesia segura e monitoramento completo." },
   { icon: "Leaf", tone: "teal", title: "Medicina Integrativa", description: "Acupuntura, fisioterapia e terapias complementares que somam ao tratamento e elevam o bem-estar." },
-  { icon: "Dna", tone: "coral", title: "Terapia Celular", description: "Medicina regenerativa com células-tronco do próprio pet para reparar tecidos e devolver qualidade de vida." },
+  { icon: "Dna", tone: "coral", title: "Laboratório de Terapia Celular", description: "Banco de células-tronco de cães, gatos e equinos e protocolo terapêutico especializado para reparar tecidos e tratar diversas doenças." },
 ];
 
 export type Specialty = { icon: IconName; title: string };
@@ -59,7 +59,7 @@ export type Differential = { icon: IconName; title: string; description: string 
 
 export const DIFFERENTIALS: Differential[] = [
   { icon: "Heart", title: "Atendimento humanizado", description: "Cada pet é único. Cuidamos com empatia, paciência e tempo para ouvir você." },
-  { icon: "Users", title: "Especialistas qualificados", description: "8 veterinários em formação contínua nas principais especialidades da medicina pet." },
+  { icon: "Users", title: "Especialistas qualificados", description: "Mais de 30 veterinários em formação contínua nas principais especialidades da medicina pet." },
   { icon: "Building", title: "Estrutura moderna", description: "Centro cirúrgico, laboratório, imagem e internação com equipamentos de ponta." },
   { icon: "ShieldCheck", title: "Prevenção em foco", description: "Mais do que tratar: orientamos tutores para uma vida longa e saudável ao lado do pet." },
 ];
@@ -83,14 +83,22 @@ export const TESTIMONIALS: Testimonial[] = [
   { name: "Camila Mendes", pet: "Tutora da Mel e do Bob", text: "Tenho dois pets e confio totalmente na Amor&Vet. Os veterinários explicam tudo com clareza e o espaço é impecável.", photo: "/depoimentos/3.jpg" },
 ];
 
-export type TeamMember = { name: string; role: string; photo: string };
+export type TeamMember = { name: string; role: string; photo?: string };
 
-/* Fotos reais em /public/equipe. Ajuste nome/especialidade conforme necessário. */
+/* Fotos reais em /public/equipe. Entradas sem `photo` mostram um placeholder elegante.
+   Para adicionar um novo médico: preencha nome/role e coloque a foto em /public/equipe. */
 export const TEAM: TeamMember[] = [
   { name: "Drª Gabriela N. Dantas", role: "Responsável Técnica · CRMV-PR 16.143", photo: "/equipe/gabriela.jpg" },
   { name: "Drª Mariana Fortunato", role: "Otoscopia Veterinária", photo: "/equipe/mariana.jpg" },
-  { name: "Médico Veterinário", role: "Clínica Médica", photo: "/equipe/azul.jpg" },
+  { name: "Vitor Hugo dos Santos", role: "Clínica Médica · CRMV-PR 14.918", photo: "/equipe/azul.jpg" },
   { name: "Médico Veterinário", role: "Cirurgia · Centro Cirúrgico", photo: "/equipe/cirurgia.jpg" },
+
+  // 5 médicas — fotos em breve (adicione `photo: "/equipe/xxx.jpg"` quando tiver)
+  { name: "Drª Ana Carolina", role: "Rotina" },
+  { name: "Drª Bianca", role: "Plantão" },
+  { name: "Drª Jessica", role: "Rotina" },
+  { name: "Drª Julia", role: "Plantão" },
+  { name: "Drª Mariana", role: "Rotina" },
 ];
 
 export const SPACE_ITEMS = [
