@@ -102,12 +102,14 @@ export const TEAM: TeamMember[] = [
 ];
 
 export const SPACE_ITEMS = [
-  { label: "Recepção acolhedora", tone: "coral" },
-  { label: "Consultórios", tone: "teal" },
-  { label: "Centro cirúrgico", tone: "teal" },
-  { label: "Laboratório", tone: "coral" },
-  { label: "Internação", tone: "coral" },
-  { label: "Sala de imagem", tone: "teal" },
+  { label: "Recepção", photo: "/espaco/recepcao.jpg" },
+  { label: "Centro cirúrgico", photo: "/espaco/centro-cirurgico.jpg" },
+  { label: "Centro de imagem", photo: "/espaco/centro-imagem.jpg" },
+  { label: "Laboratório", photo: "/espaco/laboratorio.jpg" },
+  { label: "Fisioterapia & reabilitação", photo: "/espaco/fisioterapia.jpg" },
+  { label: "Espaço externo", photo: "/espaco/externo.jpg" },
+  { label: "Internação acompanhada", photo: "/espaco/internacao.jpg" },
+  { label: "Canil & Gatil", photo: "/espaco/canil-gatil.jpg" },
 ];
 
 export type Faq = { q: string; a: string };
