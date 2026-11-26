@@ -4,18 +4,18 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.c
 
 export const metadata: Metadata = {
   title: "Sobre Nós",
-  description: "Conheça a história da Amor&Vet, fundada em 2013. Mais de 10 anos cuidando com amor dos pets com 8 veterinários especializados.",
+  description: "Conheça a história da Amor&Vet, fundada em 2021. Mais de cinco anos cuidando com amor dos pets com equipe especializada.",
   alternates: { canonical: `${SITE_URL}/sobre` },
   openGraph: {
     title: "Sobre a Amor&Vet | Clínica Veterinária",
-    description: "Mais de uma década cuidando com amor dos pets da nossa comunidade. Conheça nossa história e equipe.",
+    description: "Mais de cinco anos cuidando com amor dos pets da nossa comunidade. Conheça nossa história e equipe.",
     url: `${SITE_URL}/sobre`,
     images: [{ url: `${SITE_URL}/logoamorevet.webp`, width: 800, height: 600 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sobre a Amor&Vet",
-    description: "Mais de uma década cuidando com amor dos pets da nossa comunidade.",
+    description: "Mais de cinco anos cuidando com amor dos pets da nossa comunidade.",
   },
 };
 
@@ -26,7 +26,7 @@ export default function SobrePage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Sobre a Amor&Vet</h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            Mais de uma década cuidando com amor dos pets da nossa comunidade.
+            Mais de cinco anos cuidando com amor dos pets da nossa comunidade.
           </p>
         </div>
 
@@ -37,7 +37,7 @@ export default function SobrePage() {
               A Amor&Vet nasceu do sonho de oferecer atendimento veterinário de excelência com um toque especial: o amor incondicional pelos animais.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Fundada em 2013, nossa clínica cresceu e se tornou referência na região, sempre mantendo o compromisso com a saúde, bem-estar e qualidade de vida dos pets e de seus tutores.
+              Fundada em 2021, nossa clínica cresceu e se tornou referência na região, sempre mantendo o compromisso com a saúde, bem-estar e qualidade de vida dos pets e de seus tutores.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Contamos com uma equipe multidisciplinar apaixonada e estrutura moderna para atender cães, gatos e animais exóticos.
@@ -47,7 +47,7 @@ export default function SobrePage() {
             <div className="text-6xl mb-4">🐾</div>
             <div className="grid grid-cols-2 gap-6 mt-6">
               <div>
-                <p className="text-3xl font-bold text-primary">10+</p>
+                <p className="text-3xl font-bold text-primary">5+</p>
                 <p className="text-gray-500 text-sm">Anos de experiência</p>
               </div>
               <div>

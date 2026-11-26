@@ -38,8 +38,8 @@ export default async function NovoDesignHome() {
     name: "Amor&Vet Clínica Veterinária",
     url: SITE_URL,
     logo: `${SITE_URL}/logoamorevet.webp`,
-    description: "Clínica veterinária com mais de 10 anos de experiência em Londrina/PR.",
-    foundingDate: "2013",
+    description: "Clínica veterinária com mais de cinco anos de experiência em Londrina/PR.",
+    foundingDate: "2021",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Av. Aminthas de Barros, 475, Ipanema",

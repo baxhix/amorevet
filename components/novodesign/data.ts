@@ -18,7 +18,7 @@ export const CONTACT = {
 };
 
 export const STATS = [
-  { value: "10+", label: "anos cuidando" },
+  { value: "5+", label: "anos cuidando" },
   { value: "6 mil+", label: "pacientes atendidos" },
   { value: "30+", label: "veterinários" },
   { value: "24h", label: "pronto atendimento" },
