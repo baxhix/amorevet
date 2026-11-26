@@ -112,6 +112,59 @@ export const SPACE_ITEMS = [
   { label: "Canil & Gatil", photo: "/espaco/canil-gatil.jpg" },
 ];
 
+export type NewsItem = {
+  slug: string;
+  category: string;
+  date: string;
+  title: string;
+  excerpt: string;
+  image: string;
+  content: string[];
+};
+
+/* Conteúdo estático de blog/notícias (sem CMS). Substitua por posts reais quando houver. */
+export const NEWS: NewsItem[] = [
+  {
+    slug: "vacinacao-em-dia",
+    category: "Cuidados",
+    date: "Novembro 2026",
+    title: "Vacinação em dia: por que é tão importante",
+    excerpt: "Entenda o calendário de vacinas e como ele protege o seu pet de doenças graves ao longo da vida.",
+    image: "/blog/1.jpg",
+    content: [
+      "Manter a vacinação em dia é uma das formas mais eficazes de proteger o seu pet. As vacinas preparam o sistema imunológico para reconhecer e combater agentes causadores de doenças graves — muitas delas potencialmente fatais e de alto custo de tratamento.",
+      "Em cães, o protocolo costuma incluir a vacina múltipla (V8 ou V10) e a antirrábica. Em gatos, a quádrupla ou quíntupla e a antirrábica. Filhotes seguem um esquema inicial com reforços, e adultos recebem reforços anuais conforme orientação do médico veterinário.",
+      "Mais do que proteger o seu animal individualmente, a vacinação ajuda a reduzir a circulação de doenças na comunidade. Agende a avaliação do seu pet e monte com a nossa equipe um calendário personalizado de acordo com a idade, a espécie e o estilo de vida dele.",
+    ],
+  },
+  {
+    slug: "sinais-de-emergencia",
+    category: "Saúde",
+    date: "Outubro 2026",
+    title: "Sinais de emergência: quando procurar o pronto atendimento",
+    excerpt: "Reconheça os sintomas que indicam urgência e saiba agir rápido pelo bem-estar do seu animal.",
+    image: "/blog/2.jpg",
+    content: [
+      "Alguns sinais não devem esperar: dificuldade para respirar, convulsões, vômito ou diarreia persistentes, barriga inchada e dura, dificuldade para urinar, sangramentos, traumas e ingestão de produtos tóxicos são situações que exigem atendimento imediato.",
+      "Prostração intensa, gengivas muito pálidas ou arroxeadas, e dor evidente também são alertas importantes. Nesses casos, cada minuto conta — e o acompanhamento profissional faz toda a diferença no desfecho.",
+      "Na dúvida, não espere para ver se melhora. Nosso pronto atendimento funciona 24 horas, todos os dias. Ligue ou chame no WhatsApp antes de vir: assim, a equipe já se prepara para receber o seu pet com agilidade.",
+    ],
+  },
+  {
+    slug: "pets-idosos",
+    category: "Bem-estar",
+    date: "Setembro 2026",
+    title: "Pets idosos: cuidados para uma vida longa e saudável",
+    excerpt: "Nutrição adequada, exames periódicos e conforto — dicas para cuidar do seu companheiro na melhor idade.",
+    image: "/blog/3.jpg",
+    content: [
+      "Com o passar dos anos, o organismo do pet muda e passa a exigir cuidados específicos. Check-ups mais frequentes, com exames de sangue e de imagem, ajudam a identificar precocemente alterações renais, cardíacas, articulares e hormonais.",
+      "A nutrição também merece atenção: rações e dietas adaptadas à idade, ao peso e a eventuais condições de saúde contribuem para a qualidade de vida. Manter o peso ideal reduz a sobrecarga nas articulações e o risco de outras doenças.",
+      "Conforto e rotina fazem parte do cuidado: ambientes acessíveis, caminhas macias, passeios leves e muito carinho. Com acompanhamento veterinário regular, a melhor idade pode ser leve, saudável e cheia de bons momentos.",
+    ],
+  },
+];
+
 export type Faq = { q: string; a: string };
 
 export const FAQS: Faq[] = [

@@ -1,4 +1,3 @@
-import { prisma } from "@/lib/prisma";
 import { SERVICES } from "@/components/novodesign/data";
 import Hero from "@/components/novodesign/Hero";
 import Services from "@/components/novodesign/Services";
@@ -8,30 +7,13 @@ import Specialties from "@/components/novodesign/Specialties";
 import StemCell from "@/components/novodesign/StemCell";
 import Testimonials from "@/components/novodesign/Testimonials";
 import Space from "@/components/novodesign/Space";
+import News from "@/components/novodesign/News";
 import Faq from "@/components/novodesign/Faq";
-import BlogTeaser, { type TeaserPost } from "@/components/novodesign/BlogTeaser";
 import Contact from "@/components/novodesign/Contact";
-
-export const dynamic = "force-dynamic";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.com.br";
 
-async function getLatestPosts(): Promise<TeaserPost[]> {
-  try {
-    return await prisma.post.findMany({
-      where: { published: true },
-      orderBy: { publishedAt: "desc" },
-      take: 3,
-      include: { author: true, category: true },
-    });
-  } catch {
-    return [];
-  }
-}
-
-export default async function NovoDesignHome() {
-  const posts = await getLatestPosts();
-
+export default function NovoDesignHome() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "VeterinaryCare",
@@ -65,8 +47,8 @@ export default async function NovoDesignHome() {
       <StemCell />
       <Testimonials />
       <Space />
+      <News />
       <Faq />
-      <BlogTeaser posts={posts} />
       <Contact />
     </>
   );
