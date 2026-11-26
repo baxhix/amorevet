@@ -91,12 +91,14 @@ export const TEAM: TeamMember[] = [
   { name: "Drª Gabriela N. Dantas", role: "Responsável Técnica · CRMV-PR 16.143", photo: "/equipe/gabriela.jpg" },
   { name: "Médico Veterinário", role: "Cirurgia · Centro Cirúrgico", photo: "/equipe/cirurgia.jpg" },
 
-  // 5 médicas — fotos em breve (adicione `photo: "/equipe/xxx.jpg"` quando tiver)
-  { name: "Drª Ana Carolina", role: "Rotina" },
-  { name: "Drª Bianca", role: "Plantão" },
-  { name: "Drª Jessica", role: "Rotina" },
-  { name: "Drª Julia", role: "Plantão" },
-  { name: "Drª Mariana", role: "Rotina" },
+  // Fotos adicionadas (eq1..eq7). NOMES provisórios — ajustar depois para bater com cada pessoa.
+  { name: "Drª Ana Carolina", role: "Rotina", photo: "/equipe/eq1.jpg" },
+  { name: "Drª Bianca", role: "Plantão", photo: "/equipe/eq2.jpg" },
+  { name: "Drª Jessica", role: "Rotina", photo: "/equipe/eq3.jpg" },
+  { name: "Drª Julia", role: "Plantão", photo: "/equipe/eq4.jpg" },
+  { name: "Drª Mariana", role: "Rotina", photo: "/equipe/eq5.jpg" },
+  { name: "Médica Veterinária", role: "Equipe Amor&Vet", photo: "/equipe/eq6.jpg" },
+  { name: "Médico Veterinário", role: "Equipe Amor&Vet", photo: "/equipe/eq7.jpg" },
 ];
 
 export const SPACE_ITEMS = [
