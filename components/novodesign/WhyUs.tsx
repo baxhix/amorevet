@@ -13,7 +13,7 @@ export default function WhyUs() {
             <span className="text-primary">Uma clínica que parece parte da família</span>
           </SectionTitle>
           <Lede className="mt-5">
-            Fundada em 2021, a Amor&Vet se tornou referência em Londrina por unir
+            Fundada em 2022, a Amor&Vet se tornou referência em Londrina por unir
             medicina veterinária de excelência a um atendimento que faz tutores e
             pets se sentirem em casa.
           </Lede>
@@ -23,7 +23,7 @@ export default function WhyUs() {
               5
             </span>
             <p className="text-[0.95rem] leading-relaxed text-ink/65">
-              Mais de cinco anos de histórias ao lado de quem você ama —
+              Cinco anos de histórias ao lado de quem você ama —
               construindo confiança consulta após consulta.
             </p>
           </div>

@@ -9,7 +9,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.c
 export const metadata: Metadata = {
   title: "Amor&Vet — Clínica Veterinária em Londrina | Cuidado com amor 24h",
   description:
-    "Há mais de cinco anos cuidando de cães, gatos e exóticos em Londrina. Pronto atendimento 24h, centro cirúrgico, exames, especialidades e terapia com células-tronco.",
+    "Há cinco anos cuidando de cães, gatos e exóticos em Londrina. Pronto atendimento 24h, centro cirúrgico, exames, especialidades e terapia com células-tronco.",
   alternates: { canonical: SITE_URL },
   robots: { index: true, follow: true },
 };

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Amor&Vet",
   },
   description:
-    "Clínica veterinária com mais de cinco anos de experiência. Consultas, vacinas, cirurgias, exames e muito mais para cães, gatos e animais exóticos.",
+    "Clínica veterinária com cinco anos de experiência. Consultas, vacinas, cirurgias, exames e muito mais para cães, gatos e animais exóticos.",
   keywords: [
     "clínica veterinária",
     "veterinário",

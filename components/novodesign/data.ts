@@ -18,7 +18,7 @@ export const CONTACT = {
 };
 
 export const STATS = [
-  { value: "5+", label: "anos cuidando" },
+  { value: "5", label: "anos cuidando" },
   { value: "6 mil+", label: "pacientes atendidos" },
   { value: "30+", label: "veterinários" },
   { value: "24h", label: "pronto atendimento" },
@@ -92,13 +92,13 @@ export const TEAM: TeamMember[] = [
   { name: "Médico Veterinário", role: "Cirurgia · Centro Cirúrgico", photo: "/equipe/cirurgia.jpg" },
 
   // Fotos adicionadas (eq1..eq7). NOMES provisórios — ajustar depois para bater com cada pessoa.
-  { name: "Drª Ana Carolina", role: "Rotina", photo: "/equipe/eq1.jpg" },
-  { name: "Drª Bianca", role: "Plantão", photo: "/equipe/eq2.jpg" },
-  { name: "Drª Jessica", role: "Rotina", photo: "/equipe/eq3.jpg" },
-  { name: "Drª Julia", role: "Plantão", photo: "/equipe/eq4.jpg" },
-  { name: "Drª Mariana", role: "Rotina", photo: "/equipe/eq5.jpg" },
-  { name: "Médica Veterinária", role: "Equipe Amor&Vet", photo: "/equipe/eq6.jpg" },
-  { name: "Médico Veterinário", role: "Equipe Amor&Vet", photo: "/equipe/eq7.jpg" },
+  { name: "Drª Ana Carolina", role: "Especialista", photo: "/equipe/eq1.jpg" },
+  { name: "Dra. Mariana Fernandes", role: "Rotina · Terapias integrativas · Células-tronco · CRMV-PR 16.460", photo: "/equipe/eq2.jpg" },
+  { name: "Dra. Jessica Fernanda", role: "Rotina e plantão · CRMV-PR 24.009", photo: "/equipe/eq3.jpg" },
+  { name: "Kamilla Seehagen", role: "Gerente administrativa", photo: "/equipe/eq4.jpg" },
+  { name: "Dra. Ana Carolina Guereta", role: "Rotina e plantão · CRMV-PR 21.158", photo: "/equipe/eq5.jpg" },
+  { name: "Dra. Bianca Delicato", role: "Plantonista · CRMV-PR 18.135", photo: "/equipe/eq6.jpg" },
+  { name: "Dr. Vitor Hugo dos Santos", role: "Clínica Médica · CRMV-PR 14.918", photo: "/equipe/eq7.jpg" },
 ];
 
 export const SPACE_ITEMS = [
@@ -109,7 +109,7 @@ export const SPACE_ITEMS = [
   { label: "Fisioterapia & reabilitação", photo: "/espaco/fisioterapia.jpg" },
   { label: "Espaço externo", photo: "/espaco/externo.jpg" },
   { label: "Internação acompanhada", photo: "/espaco/internacao.jpg" },
-  { label: "Canil & Gatil", photo: "/espaco/canil-gatil.jpg" },
+  { label: "Internação separada: gatil e canil", photo: "/espaco/canil-gatil.jpg" },
 ];
 
 export type NewsItem = {
@@ -168,9 +168,9 @@ export const NEWS: NewsItem[] = [
 export type Faq = { q: string; a: string };
 
 export const FAQS: Faq[] = [
-  { q: "A clínica atende emergências 24 horas?", a: "Sim. Nosso pronto atendimento funciona 24 horas, todos os dias. Em casos de urgência, ligue ou chame no WhatsApp antes de vir — assim a equipe já se prepara para receber o seu pet." },
+  { q: "A clínica atende emergências 24 horas?", a: "Sim. Nosso pronto atendimento funciona 24 horas, todos os dias. Em casos de urgência, ligue antes de vir — assim a equipe já se prepara para receber o seu pet." },
   { q: "Quais animais vocês atendem?", a: "Atendemos cães, gatos e animais exóticos. Nossa equipe multidisciplinar tem experiência com diferentes espécies e necessidades específicas de cada uma." },
-  { q: "Como funciona a terapia com células-tronco?", a: "Utilizamos células obtidas do próprio tecido adiposo do animal para reparar tecidos danificados e restaurar a função de órgãos afetados por doenças ou lesões. É indicada em diversos casos ortopédicos, neurológicos e geriátricos." },
+  { q: "Como funciona a terapia com células-tronco?", a: "Medicina regenerativa com células-tronco para reparar tecidos e auxiliar no tratamento de diversas doenças, trazendo qualidade de vida aos nossos pacientes. Contamos com banco de células-tronco de cães, gatos e equinos, além de serviço especializado para a decisão do melhor protocolo terapêutico." },
   { q: "Preciso agendar consulta com antecedência?", a: "Para consultas de rotina, recomendamos agendar pelo WhatsApp para escolher o melhor horário. Emergências são atendidas por ordem de chegada e gravidade, a qualquer momento." },
   { q: "Vocês oferecem estágio para estudantes?", a: "Sim! Recebemos estudantes de medicina veterinária. Envie seu currículo para estagio.amorevet@gmail.com e conte um pouco sobre você." },
 ];

@@ -11,7 +11,7 @@ import { useHeroTheme } from "./HeroTheme";
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const HERO_STATS = [
-  { to: 5, suffix: "+", label: "anos cuidando" },
+  { to: 5, suffix: "", label: "anos cuidando" },
   { to: 6, suffix: " mil+", label: "pacientes atendidos" },
   { to: 30, suffix: "+", label: "veterinários" },
   { to: 24, suffix: "h", label: "pronto atendimento" },
@@ -39,7 +39,7 @@ const SLIDES: Slide[] = [
         <span className="text-secondary-light">amor de verdade</span>.
       </>
     ),
-    text: "Há mais de cinco anos cuidando de pets em Londrina, com estrutura completa e muito carinho.",
+    text: "Estrutura completa, equipe especializada e muito carinho para cuidar do seu pet em Londrina.",
     cta: { label: "Conhecer a clínica", href: "#servicos" },
   },
   {

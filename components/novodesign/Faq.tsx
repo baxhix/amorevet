@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { FAQS, CONTACT } from "./data";
-import { Plus } from "./icons";
+import { Plus, Phone } from "./icons";
 import { Reveal } from "./motion";
-import { SectionTitle, Lede, ButtonWhatsApp } from "./ui";
+import { SectionTitle, Lede } from "./ui";
 
 export default function Faq() {
   const [open, setOpen] = useState<number | null>(0);
@@ -21,7 +21,13 @@ export default function Faq() {
             com carinho e clareza.
           </Lede>
           <div className="mt-7">
-            <ButtonWhatsApp href={CONTACT.whatsapp}>Falar no WhatsApp</ButtonWhatsApp>
+            <a
+              href={CONTACT.phone1}
+              className="inline-flex items-center justify-center gap-2.5 rounded-full bg-secondary px-7 py-3.5 text-[0.95rem] font-semibold text-white nd-shadow-coral transition-[transform,background-color] duration-200 hover:bg-secondary-dark active:scale-[0.97]"
+            >
+              <Phone className="h-5 w-5" />
+              Ligar · {CONTACT.phone1Label}
+            </a>
           </div>
         </Reveal>
 

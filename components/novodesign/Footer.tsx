@@ -21,7 +21,7 @@ export default function Footer() {
             <Image src="/logoamorevet.webp" alt="Amor&Vet" width={112} height={112} className="h-24 w-24 object-contain" />
 
             <p className="mt-5 max-w-xs text-[0.9rem] leading-relaxed text-white/55">
-              Há mais de cinco anos cuidando<br />
+              Há cinco anos cuidando<br />
               com amor da saúde e do bem-estar dos pets de Londrina e região.
             </p>
             <div className="mt-6 flex gap-2.5">
