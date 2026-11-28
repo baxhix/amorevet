@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Sora, Inter } from "next/font/google";
+import { SITE_URL, SITE_NAME, OG_IMAGE } from "@/lib/site";
 import "./globals.css";
 
 const sora = Sora({
@@ -15,42 +16,46 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.com.br";
-
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Amor&Vet - Clínica Veterinária",
+    default: "Amor&Vet — Clínica Veterinária em Londrina",
     template: "%s | Amor&Vet",
   },
   description:
-    "Clínica veterinária com cinco anos de experiência. Consultas, vacinas, cirurgias, exames e muito mais para cães, gatos e animais exóticos.",
+    "Clínica veterinária em Londrina com pronto atendimento 24h. Consultas, cirurgias, exames, especialidades e terapia com células-tronco para cães, gatos e exóticos.",
+  applicationName: SITE_NAME,
   keywords: [
-    "clínica veterinária",
-    "veterinário",
-    "pet",
-    "animais",
-    "consulta veterinária",
-    "vacinação pets",
+    "clínica veterinária Londrina",
+    "veterinário 24h Londrina",
+    "pronto atendimento veterinário",
     "cirurgia veterinária",
-    "saúde animal",
+    "exames veterinários",
+    "células-tronco veterinária",
+    "emergência pet Londrina",
+    "cães gatos exóticos",
   ],
-  robots: { index: true, follow: true },
+  authors: [{ name: SITE_NAME }],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    siteName: "Amor&Vet",
+    siteName: SITE_NAME,
     url: SITE_URL,
-    images: [
-      {
-        url: `${SITE_URL}/logoamorevet.webp`,
-        width: 800,
-        height: 600,
-        alt: "Amor&Vet Clínica Veterinária",
-      },
-    ],
+    title: "Amor&Vet — Clínica Veterinária em Londrina",
+    description: "Pronto atendimento 24h, centro cirúrgico, exames e especialidades. Cuidado com amor para o seu pet.",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Amor&Vet — Clínica Veterinária em Londrina" }],
   },
   twitter: {
     card: "summary_large_image",
+    title: "Amor&Vet — Clínica Veterinária em Londrina",
+    description: "Pronto atendimento 24h, centro cirúrgico, exames e especialidades. Cuidado com amor para o seu pet.",
+    images: [OG_IMAGE],
   },
 };
 

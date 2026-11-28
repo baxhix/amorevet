@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = post.metaTitle || post.title;
   const description = post.metaDescription || post.excerpt;
   const canonicalUrl = post.canonicalUrl || `${SITE_URL}/blog/${post.slug}`;
-  const ogImage = post.coverImage || `${SITE_URL}/og-default.jpg`;
+  const ogImage = post.coverImage || `${SITE_URL}/og.jpg`;
 
   return {
     title,
@@ -80,7 +80,7 @@ export default async function PostPage({ params }: Props) {
   if (!post) notFound();
 
   const canonicalUrl = post.canonicalUrl || `${SITE_URL}/blog/${post.slug}`;
-  const ogImage = post.coverImage || `${SITE_URL}/og-default.jpg`;
+  const ogImage = post.coverImage || `${SITE_URL}/og.jpg`;
 
   // JSON-LD structured data — Article schema
   const jsonLd = {
@@ -98,7 +98,7 @@ export default async function PostPage({ params }: Props) {
       name: SITE_NAME,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/logoamorevet.webp`,
+        url: `${SITE_URL}/og.jpg`,
       },
     },
     url: canonicalUrl,

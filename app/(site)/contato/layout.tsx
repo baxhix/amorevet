@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.com.br";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet-three.vercel.app";
 
 export const metadata: Metadata = {
   title: "Contato",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Entre em Contato | Amor&Vet",
     description: "Agende uma consulta ou tire suas dúvidas. Estamos prontos para ajudar você e seu pet.",
     url: `${SITE_URL}/contato`,
-    images: [{ url: `${SITE_URL}/logoamorevet.webp`, width: 800, height: 600 }],
+    images: [{ url: `${SITE_URL}/og.jpg`, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

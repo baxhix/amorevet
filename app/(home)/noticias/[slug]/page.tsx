@@ -5,8 +5,7 @@ import Link from "next/link";
 import { NEWS, CONTACT } from "@/components/novodesign/data";
 import { ArrowRight } from "@/components/novodesign/icons";
 import { ButtonWhatsApp } from "@/components/novodesign/ui";
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.com.br";
+import { SITE_URL } from "@/lib/site";
 
 interface Props {
   params: Promise<{ slug: string }>;

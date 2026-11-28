@@ -91,14 +91,12 @@ export const TEAM: TeamMember[] = [
   { name: "Drª Gabriela N. Dantas", role: "Responsável Técnica · CRMV-PR 16.143", photo: "/equipe/gabriela.jpg" },
   { name: "Médico Veterinário", role: "Cirurgia · Centro Cirúrgico", photo: "/equipe/cirurgia.jpg" },
 
-  // Fotos adicionadas (eq1..eq7). NOMES provisórios — ajustar depois para bater com cada pessoa.
-  { name: "Drª Ana Carolina", role: "Especialista", photo: "/equipe/eq1.jpg" },
+  // Fotos adicionadas. NOMES provisórios onde ainda não identificados.
   { name: "Dra. Mariana Fernandes", role: "Rotina · Terapias integrativas · Células-tronco · CRMV-PR 16.460", photo: "/equipe/eq2.jpg" },
   { name: "Dra. Jessica Fernanda", role: "Rotina e plantão · CRMV-PR 24.009", photo: "/equipe/eq3.jpg" },
   { name: "Kamilla Seehagen", role: "Gerente administrativa", photo: "/equipe/eq4.jpg" },
   { name: "Dra. Ana Carolina Guereta", role: "Rotina e plantão · CRMV-PR 21.158", photo: "/equipe/eq5.jpg" },
   { name: "Dra. Bianca Delicato", role: "Plantonista · CRMV-PR 18.135", photo: "/equipe/eq6.jpg" },
-  { name: "Dr. Vitor Hugo dos Santos", role: "Clínica Médica · CRMV-PR 14.918", photo: "/equipe/eq7.jpg" },
 ];
 
 export const SPACE_ITEMS = [

@@ -1,29 +1,30 @@
-# Amor&Vet - Clínica Veterinária
+# Amor&Vet — Clínica Veterinária
 
-## Sobre
-A Amor&Vet é uma clínica veterinária fundada em 2013, especializada em cuidados para cães, gatos e animais exóticos. Oferecemos atendimento veterinário completo com equipe multidisciplinar e estrutura moderna.
+> Clínica veterinária em Londrina/PR, fundada em 2022, com pronto atendimento 24 horas. Cuidado humanizado para cães, gatos e animais exóticos, com estrutura completa e equipe de mais de 30 veterinários. Completa 5 anos em fevereiro de 2027.
 
 ## Serviços
-- Consultas clínicas gerais
-- Vacinação com protocolos atualizados
-- Exames laboratoriais e de imagem
-- Cirurgias eletivas e de emergência
-- Banho e tosa profissional
-- Odontologia veterinária
-- Microchipagem
-- Internação e UTI animal
-- Terapia com células-tronco (especialidade)
+- Pronto atendimento 24 horas (emergências veterinárias)
+- Internação monitorada — gatil e canil separados; internação acompanhada
+- Centro cirúrgico (cirurgias eletivas e de urgência)
+- Exames laboratoriais (unidade de laboratório parceiro PETSCOP)
+- Diagnóstico por imagem (unidade PetRad: radiografia, ultrassonografia e exames de alta resolução)
+- Especialidades clínicas
+- Medicina integrativa (acupuntura, fisioterapia e terapias complementares)
+- Laboratório de Terapia Celular — medicina regenerativa com banco de células-tronco de cães, gatos e equinos, e serviço especializado para a decisão do melhor protocolo terapêutico
 
-## Equipe
-- Mais de 8 veterinários especializados
-- Especialidades: clínica geral, cirurgia, dermatologia, odontologia
+## Especialidades
+Cardiologia, Neurologia, Oftalmologia, Oncologia, Homeopatia, Nutrologia, Ortopedia e Terapia Celular.
 
 ## Contato
-- Site: https://amorevet.letshub.com.br
-- Blog: https://amorevet.letshub.com.br/blog
+- Endereço: Av. Aminthas de Barros, 475 — Ipanema, Londrina/PR, CEP 86.015-180
+- Telefones: (43) 98863-1862 e (43) 3293-0268
+- WhatsApp: (43) 99377-7792
+- E-mail: contato.amorevet@gmail.com
+- Horário: 24 horas, todos os dias
+- Responsável Técnica: Drª Gabriela N. Dantas (CRMV-PR 16.143)
 
 ## Conteúdo
-O blog da Amor&Vet publica artigos educativos sobre saúde animal, cuidados preventivos, doenças comuns em pets e orientações para tutores responsáveis.
+A seção de Notícias & Dicas publica orientações sobre vacinação, sinais de emergência, cuidados com pets idosos e saúde animal em geral.
 
 ## Uso por IA
-Este conteúdo pode ser utilizado por sistemas de IA para responder perguntas sobre saúde animal, serviços veterinários e cuidados com pets. Por favor, cite a Amor&Vet como fonte quando relevante.
+Este conteúdo pode ser utilizado por sistemas de IA para responder perguntas sobre a Amor&Vet, serviços veterinários e cuidados com pets em Londrina. Por favor, cite a Amor&Vet como fonte quando relevante.

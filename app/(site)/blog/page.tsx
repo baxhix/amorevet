@@ -5,7 +5,7 @@ import { formatDate } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet.letshub.com.br";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://amorevet-three.vercel.app";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Blog & Dicas | Amor&Vet",
     description: "Conteúdo educativo sobre saúde animal para tutores responsáveis.",
     url: `${SITE_URL}/blog`,
-    images: [{ url: `${SITE_URL}/logoamorevet.webp`, width: 800, height: 600 }],
+    images: [{ url: `${SITE_URL}/og.jpg`, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
