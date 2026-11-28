@@ -11,7 +11,7 @@ import { useHeroTheme } from "./HeroTheme";
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const HERO_STATS = [
-  { to: 5, suffix: "", label: "anos cuidando" },
+  { to: 5, suffix: "", label: "anos de experiência" },
   { to: 6, suffix: " mil+", label: "pacientes atendidos" },
   { to: 30, suffix: "+", label: "veterinários" },
   { to: 24, suffix: "h", label: "pronto atendimento" },
@@ -23,6 +23,7 @@ type Slide = {
   bg: string;
   badge: string;
   title: ReactNode;
+  titleClass?: string; // largura máx. do título (padrão max-w-md)
   text: string;
   cta: { label: string; href: string; external?: boolean };
 };
@@ -63,9 +64,10 @@ const SLIDES: Slide[] = [
     badge: "Inovação & tecnologia",
     title: (
       <>
-        Da rotina à <span className="text-primary">terapia com células-tronco</span>.
+        Da rotina à <span className="text-primary">terapia<br />com células-tronco</span>.
       </>
     ),
+    titleClass: "max-w-xl",
     text: "Tratamentos avançados e medicina regenerativa para uma vida longa e saudável ao lado do seu pet.",
     cta: { label: "Falar no WhatsApp", href: CONTACT.whatsapp, external: true },
   },
@@ -136,7 +138,7 @@ export default function Hero() {
         </button>
 
         {/* Contador + dots */}
-        <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 items-center gap-4">
+        <div className="absolute bottom-20 left-1/2 z-20 flex -translate-x-1/2 items-center gap-4 sm:bottom-24">
           <div className="flex items-center gap-2">
             {SLIDES.map((_, i) => (
               <button
@@ -174,14 +176,14 @@ export default function Hero() {
             {HERO_STATS.map((s, i) => (
               <div
                 key={s.label}
-                className={`px-6 py-7 text-center ${i > 0 ? "border-l border-ink/8" : ""} ${
+                className={`px-6 py-8 text-center ${i > 0 ? "border-l border-ink/8" : ""} ${
                   i === 2 ? "border-l-0 sm:border-l" : ""
                 } ${i >= 2 ? "border-t border-ink/8 sm:border-t-0" : ""}`}
               >
-                <p className="text-[2rem] font-bold leading-none text-primary">
+                <p className="text-[2.4rem] font-extrabold leading-none tracking-tight text-primary">
                   <Counter to={s.to} suffix={s.suffix} />
                 </p>
-                <p className="mt-2 text-[0.82rem] font-medium text-ink/55">{s.label}</p>
+                <p className="mt-2.5 text-[0.9rem] font-semibold text-ink/65">{s.label}</p>
               </div>
             ))}
           </div>
@@ -219,7 +221,7 @@ function SlideContent({
       : { initial: false as const, animate: { opacity: 1, y: 0 } };
 
   return (
-    <div className="relative overflow-hidden pt-32 pb-20 sm:pt-48 sm:pb-24">
+    <div className="relative overflow-hidden pt-32 pb-28 sm:pt-48 sm:pb-32">
       {/* patas no fundo */}
       <div className="pointer-events-none absolute inset-0">
         <div className={`nd-paws absolute inset-0 ${light ? "opacity-[0.05] [filter:invert(1)]" : "opacity-[0.06]"}`} />
@@ -243,7 +245,7 @@ function SlideContent({
 
           <motion.h1
             {...fade(0.08)}
-            className={`mt-6 max-w-md text-[2.1rem] font-bold leading-[1.08] tracking-tight sm:text-[2.7rem] lg:text-[3rem] ${
+            className={`mt-6 ${slide.titleClass ?? "max-w-md"} text-[2.1rem] font-bold leading-[1.08] tracking-tight sm:text-[2.7rem] lg:text-[3rem] ${
               light ? "text-ink" : "text-white"
             }`}
           >
